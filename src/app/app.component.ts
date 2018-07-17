@@ -39,9 +39,4 @@ export class AppComponent {
     this.valbutton = 'Update';
   };
 
-  delete = function (id) {
-    this.newService.deleteUser(id)
-      .subscribe(data => { alert(data.data); this.ngOnInit(); }, error => this.errorMessage = error);
-  };
-
 }
