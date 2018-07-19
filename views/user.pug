@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= user.name
+  p Welcome to #{user.name}
+  p Email : #{user.emailid}
+  a(href="/auth/logout") Logout

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Systers Open Source Slack Inviter</title>
+    <link rel="icon" href="http://cdn.anitaborg.org/wp-content/themes/abi/favicon.ico">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body data-feedly-mini="yes">
+    <div class="container">
+      <div class="row featurette">
+        <div class="col-md-12">
+
+          <h1>Systers Open Source Slack Inviter</h1>
+
+          <p>Systers Open Source Software (OSS) community is for all those who want to join the discussion and/or contribute to Systers open source projects. We welcome UI/UX designers, developers, testers, and beyond to participate in creating social impact products to help Systers and Peace Corps communities. We talk about technology, design, implementation, testing methodologies and more to help build products that are innovative and useful to those who are using them.</p>
+
+          <p>Please enter the email address you want our Community to use to send you an invitation to our OSS community.</p>
+
+          <form id="invitationForm">
+            <div class="row">
+              <div class="col-xs-5"> 
+                <input type="email" class="form-control" id="email" name="invitation[email]" placeholder="you@example.com" required>
+              </div>
+              <div class="col-xs-5">
+                <button type="submit" class="btn btn-success" id="submit">Invite Me</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/inviter.js"></script>
+
+  </body>
+</html>
