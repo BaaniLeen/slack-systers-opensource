@@ -1,7 +1,32 @@
 extends layout
 
 block content
-  h1= user.name
-  p Welcome to #{user.name}
-  p Email : #{user.emailid}
-  a(href="/auth/logout") Logout
+  .div.featurette
+    .h1 We're almost there!
+    br
+    |     
+    .h4 Name: #{user.name}
+    br
+    |   
+    .h4 Email : #{user.emailid}
+    br
+    |   
+    br
+    |   
+    .col-md-4.col-md-offset-4
+      div.form-group
+        +checkbox-inline("I agree to the Terms and Conditions.")
+        br
+        |    
+        br
+        |    
+        +a-btn("/") Get an Email Invite!
+    br
+    |    
+    br
+    |  
+    br
+    |    
+    br
+    |         
+    //- input(type='text', value='#{user.name}' name='lname' style='color:black;' disabled='') TODO future
