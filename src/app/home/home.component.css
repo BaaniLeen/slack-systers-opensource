@@ -1,0 +1,69 @@
+html {
+    position: relative;
+    min-height: 100%
+  }
+  
+  body {
+    background: url("../../assets/OpenSource2.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%; 
+  }
+  
+  h1 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 4.5rem
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  .featurette {
+    color: #fff;
+    background-color: rgba(75, 85, 115, 0.67);
+    padding: 5em 2em
+  }
+  
+  .dn {
+    display: none
+  }
+  
+  .success {
+    color: #28b62c
+  }
+  
+  .error {
+    color: #ff4136
+  }
+  
+  .footer {
+    background-color: rgba(75, 85, 115, 0.67);
+    position: absolute;
+    bottom: 0;
+    width: 100%
+  }
+  
+  body > .container {
+    padding: 60px 15px 0
+  }
+  
+  .container .text-muted {
+    margin: 20px 0;
+    font-size: 1.5rem
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px
+  }
+  
+  .container-footer {
+    font-size: 1.5rem;
+    margin-bottom: 0
+  }
+  
+  .container-footer a{
+    color: #fff;
+    text-decoration: underline
+  }
