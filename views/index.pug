@@ -1,0 +1,34 @@
+doctype html
+html
+  include ../node_modules/pug-bootstrap/_bootstrap.pug
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .div.featurette
+      .main.container
+      .row
+        .h1 Welcome to Systers Open Source Slack Inviter
+        br
+        |  
+        .h4 Systers Open Source Software (OSS) community is for all those who want to join the discussion and/or contribute to Systers open source projects. 
+        br
+        |     
+        .h4 We welcome UI/UX designers, developers, testers, and beyond to participate in creating social impact products to help Systers and Peace Corps communities. 
+        br
+        |
+        .h4 We talk about technology, design, implementation, testing methodologies and more to help build products that are innovative and useful to those who are using them.
+        br
+        |    
+        .h4 Please authenticate using your Github account.
+      br
+      | 
+      br
+      |  
+      br
+      | 
+      br
+      |     
+      .col-md-4.col-md-offset-4
+          div.form-group
+            +a-btn("/auth/github") Authentication Using Github
