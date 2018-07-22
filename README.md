@@ -2,3 +2,8 @@
 
 # slack-systers-opensource
 Automatic Slack Inviter for Systers Open Source 
+
+##Installation Instructions
+1. npm install
+2. npm start
+3. Open localhost:3000/ on your browser
