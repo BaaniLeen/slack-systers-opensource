@@ -37,7 +37,7 @@ passport.use(new GitHubStrategy({
       secure: true,
       auth: {
         user: "baani.jolly@gmail.com",
-        pass: "1Msrhdkphdrhgnn@"
+        pass: ""
       }
     });
     let mailOptions = {
