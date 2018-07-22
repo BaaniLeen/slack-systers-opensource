@@ -1,5 +1,5 @@
-var express = require("express");
-var router = express.Router();
+var Express = require("express");
+var router = Express.Router();
 var passportGitHub = require("../auth/github");
 var User = require("../models/User");
 

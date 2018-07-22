@@ -1,7 +1,7 @@
-var passport = require('passport');
-var GitHubStrategy = require('passport-github').Strategy;
+var passport = require("passport");
+var GitHubStrategy = require("passport-github").Strategy;
 var nodeMailer = require("nodemailer");
-var User = require('../models/User');
+var User = require("../models/User");
 
 passport.serializeUser(function (user, fn) {
   fn(null, user);
@@ -21,7 +21,7 @@ passport.use(new GitHubStrategy({
     callbackURL: "http://127.0.0.1:3000/auth/github/callback"
   },
   function (accessToken, refreshToken, profile, done) {
-    console.log(profile.emails[0].value);
+    // console.log(profile.emails[0].value);
     User.findOrCreate({
       userid: profile.id
     }, {
@@ -51,7 +51,7 @@ passport.use(new GitHubStrategy({
     transporter.sendMail(mailOptions, (error, info) => {
 
       if (!error) {
-        return console.log(error);
+        // return console.log(error);
       }
 
     });
