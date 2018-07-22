@@ -16,9 +16,7 @@ var app = express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://localhost/node-passport-social", { useMongoClient: true })
-  .then(() =>  console.log("connection successful"))
-  .catch((err) => console.error(err));
+mongoose.connect("mongodb://localhost/node-passport-social", { useMongoClient: true });
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
