@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var passportTwitter = require('../auth/twitter');
 var passportGitHub = require('../auth/github');
 var User = require('../models/User');
 
@@ -14,16 +13,6 @@ router.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
 });
-
-/* TWITTER ROUTER */
-router.get('/twitter',
-  passportTwitter.authenticate('twitter'));
-
-router.get('/twitter/callback',
-  passportTwitter.authenticate('twitter', { failureRedirect: '/login' }),
-  function(req, res) {
-    res.redirect('/users');
-  });
 
 /* GITHUB ROUTER */
 router.get('/github',

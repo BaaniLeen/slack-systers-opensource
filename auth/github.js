@@ -3,6 +3,18 @@ var GitHubStrategy = require('passport-github').Strategy;
 var nodeMailer = require("nodemailer");
 var User = require('../models/User');
 
+passport.serializeUser(function (user, fn) {
+  fn(null, user);
+});
+
+passport.deserializeUser(function (id, fn) {
+  User.findOne({
+    _id: id.doc._id
+  }, function (err, user) {
+    fn(err, user);
+  });
+});
+
 passport.use(new GitHubStrategy({
     clientID: "94c3bea3e111456764eb",
     clientSecret: "b665c678fe607b3460b50c41fb01d801848f207a",
@@ -10,6 +22,15 @@ passport.use(new GitHubStrategy({
   },
   function (accessToken, refreshToken, profile, done) {
     console.log(profile.emails[0].value);
+    User.findOrCreate({
+      userid: profile.id
+    }, {
+      name: profile.displayName,
+      userid: profile.id,
+      emailid: profile.emails[0].value
+    }, function (err, user) {
+      return done(err, user);
+    });
     let transporter = nodeMailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
@@ -33,16 +54,6 @@ passport.use(new GitHubStrategy({
         return console.log(error);
       }
 
-    });
-
-    User.findOrCreate({
-      userid: profile.id
-    }, {
-      name: profile.displayName,
-      userid: profile.id,
-      emailid: profile.emails[0].value
-    }, function (err, user) {
-      return done(err, user);
     });
   }
 ));
