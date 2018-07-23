@@ -1,5 +1,5 @@
 var Express = require("express");
-var router = Express.Router();
+var router = Express.Router();  // eslint-disable-line
 
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }

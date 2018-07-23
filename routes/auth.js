@@ -1,5 +1,5 @@
 var Express = require("express");
-var router = Express.Router();
+var router = Express.Router();  // eslint-disable-line
 var passportGitHub = require("../auth/github");
 var User = require("../models/User");
 
