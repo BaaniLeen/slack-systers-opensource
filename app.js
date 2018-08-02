@@ -16,7 +16,7 @@ var app = express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect("mongodb://localhost/node-passport-social", { useMongoClient: true });
+mongoose.connect("mongodb://systers:systers2018@ds229290.mlab.com:29290/systers_os_members", { useMongoClient: true });
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
