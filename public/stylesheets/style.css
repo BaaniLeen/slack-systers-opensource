@@ -36,3 +36,7 @@ h4 {
   display: block;
   float: center;
 }
+.sScrollableTnC {
+  overflow:scroll;
+  height:20vh;
+}
