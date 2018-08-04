@@ -18,7 +18,7 @@ passport.deserializeUser(function (id, fn) {
 passport.use(new GitHubStrategy({
     clientID: "94c3bea3e111456764eb",
     clientSecret: "b665c678fe607b3460b50c41fb01d801848f207a",
-    callbackURL: "https://slack-systers-open-source.herokuapp.com/auth/github/callback"
+    callbackURL: "https://slack-systers-opensource.herokuapp.com/auth/github/callback"
   },
   function (accessToken, refreshToken, profile, done) {
     // console.log(profile.emails[0].value);
