@@ -45,7 +45,7 @@ passport.use(new GitHubStrategy({
       to: profile.emails[0].value, // list of receivers
       subject: "Slack Invitation", // Subject line
       text: "Here is your link", // plain text body
-      html: "<b>Hello World</b>" // html body
+      html: "<center><img src='https://avatars2.githubusercontent.com/u/6520415?s=280&v=4'><br><br><br><h1> Welcome to Systers Open Source Slack!</h1><br><button><a href='http://systers-opensource.slack.com/'><h2>Click here to join the slack channel</h2></a></button></center>" // html body
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
