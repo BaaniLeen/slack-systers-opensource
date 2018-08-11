@@ -12,14 +12,16 @@ block content
     br
     |   
     br
-    |   
+    |  
     .col-md-4.col-md-offset-4
-      div.form-group
-        +checkbox-inline("I agree to the Terms and Conditions.")
+      div.form-group  
+        label.checkbox-inline
+          input(type="checkbox", name="hidden")
+          | By checking this box, I affirm that I have read and accept to be bound by the AnitaB.org #[a(href="https://ghc.anitab.org/code-of-conduct/") Code of Conduct], #[a(href="https://anitab.org/terms-of-use/") Terms], and #[a(href="https://anitab.org/privacy-policy/") Privacy Policy]. Further, I consent to the use of my information for the stated purpose.
         br
         |    
         br
-        |    
+        |  
         +a-btn("/success") Get an Email Invite!
     br
     |    
@@ -28,4 +30,14 @@ block content
     br
     |    
     br
-    |         
+    |    
+    br
+    |  
+    br
+    |    
+    br
+    |        
+    br
+    |    
+    br
+    |  
