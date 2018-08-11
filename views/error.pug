@@ -1,6 +1,30 @@
-extends layout
-
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+html
+  include ../node_modules/pug-bootstrap/_bootstrap.pug
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .div.featurette
+      .main.container
+      .row
+        .h1 We have encountered an Error.
+        br
+        |     
+        br
+        |     
+        .h3 Suggested fix:
+        br
+        |      
+        .h4 Make your Github email ID public temporarily and then try again. 
+    br
+    |  
+    br
+    |  
+    br
+    |  
+    br
+    |      
+    .footer.page-footer.blue-grey.featurette1
+      .div.footer-copyright
+        .div.container
+          .h4 © Systers, an Anita Borg Institute Community      
