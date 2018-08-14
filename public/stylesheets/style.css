@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url(../image/img01.jpg);
+  background-image: url(../image/background.jpg);
   background-size: cover;
   text-align: center;
 }
@@ -24,6 +24,10 @@ a {
   color: #fff;
   background-color: rgba(75, 85, 115, 0.67);
   padding: 5em 2em
+}
+.featurette1 {
+  color: #fff;
+  background-color: rgba(75, 85, 115, 0.67);
 }
 h1 {
   color: #fff;

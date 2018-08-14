@@ -41,7 +41,7 @@ app.use("/auth", auth);
 
 app.get("/success", function(req, res){
   res.render("thankyou", {
-    title: "Mail Sent Successfully"
+    title: "Thank You"
   });
 });
 

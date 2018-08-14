@@ -21,7 +21,6 @@ passport.use(new GitHubStrategy({
     callbackURL: "https://slack-systers-opensource.herokuapp.com/auth/github/callback"
   },
   function (accessToken, refreshToken, profile, done) {
-    // console.log(profile.emails[0].value);
     User.findOrCreate({
       userid: profile.id
     }, {
@@ -51,7 +50,6 @@ passport.use(new GitHubStrategy({
     transporter.sendMail(mailOptions, (error, info) => {
 
       if (!error) {
-        // return console.log(error);
       }
 
     });

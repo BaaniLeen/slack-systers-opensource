@@ -1,3 +1,5 @@
+//Contains the UserSchema for the Database
+
 var mongoose = require("mongoose");
 
 var UserSchema = new mongoose.Schema({
