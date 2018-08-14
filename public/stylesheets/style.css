@@ -25,6 +25,10 @@ a {
   background-color: rgba(75, 85, 115, 0.67);
   padding: 5em 2em
 }
+.featurette1 {
+  color: #fff;
+  background-color: rgba(75, 85, 115, 0.67);
+}
 h1 {
   color: #fff;
   margin-top: 0;
